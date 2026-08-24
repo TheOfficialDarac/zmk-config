@@ -11,10 +11,9 @@
 #include <dt-bindings/zmk/rgb.h>
 
 / {
-    chosen { zmk,physical-layout = &default_layout; };
-};
-
-/ {
+    chosen { 
+        zmk,physical-layout = &default_layout; 
+    },
     combos {
         compatible = "zmk,combos";
 
