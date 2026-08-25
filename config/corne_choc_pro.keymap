@@ -5,9 +5,8 @@
 #include <dt-bindings/zmk/rgb.h>
 
 / {
-    chosen { 
-        zmk,physical-layout = &default_layout; 
-    };
+    chosen { zmk,physical-layout = &default_layout; };
+
     combos {
         compatible = "zmk,combos";
 
@@ -66,30 +65,30 @@
             //                    | GUI |     | SPC |               | ENT |     | ALT |
 
             bindings = <
-&trans  &kp EXCL   &kp AT     &kp HASH   &kp DLLR           &kp PRCNT         &none  &none  &kp CARET      &kp AMPS               &kp ASTRK        &none              &none     &trans
+&trans  &none      &kp AT     &kp HASH   &kp DLLR           &none             &none  &none  &none          &kp AMPS               &kp ASTRK        &kp PERCENT        &none     &trans
 &trans  &kp CARET  &kp MINUS  &kp EQUAL  &kp APOS           &kp GREATER_THAN  &none  &none  &kp LESS_THAN  &kp LEFT_PARENTHESIS   &kp LEFT_BRACE   &kp LEFT_BRACKET   &kp BSLH  &trans
 &trans  &kp EXCL   &kp UNDER  &kp PLUS   &kp DOUBLE_QUOTES  &none                           &none          &kp RIGHT_PARENTHESIS  &kp RIGHT_BRACE  &kp RIGHT_BRACKET  &kp PIPE  &trans
                               &trans     &trans             &trans                          &trans         &trans                 &trans
             >;
         };
 
-        extra_layer_1 {
+        SPECIAL {
             display-name = "EXTRA 1";
             bindings = <
 &kp F1  &kp F2          &kp F3           &kp F4             &kp F5           &kp F6           &trans  &trans  &kp F7          &kp F8          &kp F9          &kp F10       &kp F11          &kp F12
 &trans  &mkp MB5        &mkp MB4         &mkp MCLK          &mkp MB1         &mkp MB2         &trans  &trans  &studio_unlock  &mmv MOVE_LEFT  &mmv MOVE_DOWN  &mmv MOVE_UP  &mmv MOVE_RIGHT  &trans
-&trans  &bt BT_CLR_ALL  &rgb_ug RGB_EFF  &kp C_VOLUME_DOWN  &kp C_VOLUME_UP  &rgb_ug RGB_TOG                  &trans          &msc SCRL_LEFT  &msc SCRL_DOWN  &msc SCRL_UP  &msc SCRL_RIGHT  &trans
+&sl 4   &bt BT_CLR_ALL  &rgb_ug RGB_EFF  &kp C_VOLUME_DOWN  &kp C_VOLUME_UP  &rgb_ug RGB_TOG                  &bt BT_CLR_ALL  &msc SCRL_LEFT  &msc SCRL_DOWN  &msc SCRL_UP  &msc SCRL_RIGHT  &trans
                                          &trans             &trans           &trans                           &trans          &trans          &trans
             >;
         };
 
-        extra_layer_2 {
+        BT-RGB {
             display-name = "EXTRA 2";
             bindings = <
-&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans                  &trans  &trans  &trans  &trans  &trans  &trans
-                        &trans  &trans  &trans                  &trans  &trans  &trans
+&trans  &bt BT_SEL 0   &bt BT_SEL 1   &bt BT_SEL 2    &bt BT_SEL 3   &bt BT_SEL 4   &trans  &trans  &rgb_ug RGB_COLOR_HSB(0,67,47)  &rgb_ug RGB_COLOR_HSB(221,82,50)  &rgb_ug RGB_COLOR_HSB(115,81,46)  &rgb_ug RGB_COLOR_HSB(54,86,54)  &rgb_ug RGB_COLOR_HSB(287,100,55)  &rgb_ug RGB_COLOR_HSB(178,100,50)
+&sl 0   &bt BT_NXT     &bt BT_PRV     &bt BT_CLR_ALL  &bt BT_CLR     &trans         &trans  &trans  &rgb_ug RGB_TOG                 &rgb_ug RGB_HUD                   &rgb_ug RGB_SAD                   &rgb_ug RGB_BRD                  &rgb_ug RGB_SPD                    &rgb_ug RGB_EFR
+&sl 4   &bt BT_DISC 0  &bt BT_DISC 1  &bt BT_DISC 2   &bt BT_DISC 3  &bt BT_DISC 4                  &trans                          &rgb_ug RGB_HUI                   &rgb_ug RGB_SAI                   &rgb_ug RGB_BRI                  &rgb_ug RGB_SPI                    &rgb_ug RGB_EFF
+                                      &trans          &trans         &trans                         &trans                          &trans                            &trans
             >;
         };
 
