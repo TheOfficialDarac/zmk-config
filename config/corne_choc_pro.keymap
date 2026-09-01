@@ -31,7 +31,7 @@
             bindings = <
 &kp TAB       &kp Q  &kp W  &kp E             &kp P      &kp B  &none  &none  &kp J  &kp L           &kp U      &kp Y    &kp GRAVE  &kp BSPC
 &kp ESCAPE    &kp A  &kp R  &kp S             &kp T      &kp G  &none  &none  &kp M  &kp N           &kp E      &kp I    &kp O      &kp ENTER
-&kp LEFT_GUI  &kp Z  &kp X  &kp C             &kp D      &kp V                &kp K  &kp H           &kp COMMA  &kp DOT  &kp SEMI   &kp FSLH
+&kp LEFT_GUI  &kp Z  &kp X  &kp C             &kp D      &kp V                &kp K  &kp H           &kp COMMA  &kp DOT  &kp SEMI   &kp SLASH
                             &kp LEFT_CONTROL  &kp SPACE  &mo 2                &mo 1  &kp LEFT_SHIFT  &kp RALT
             >;
 
@@ -65,10 +65,10 @@
             //                    | GUI |     | SPC |               | ENT |     | ALT |
 
             bindings = <
-&trans  &kp CAPSLOCK  &kp AT          &kp HASH   &kp DLLR           &none             &none  &none  &none          &kp AMPERSAND          &kp ASTERISK     &kp PERCENT        &kp KP_NUMLOCK  &trans
-&trans  &kp CARET     &kp MINUS       &kp EQUAL  &kp APOS           &kp GREATER_THAN  &none  &none  &kp LESS_THAN  &kp LEFT_PARENTHESIS   &kp LEFT_BRACE   &kp LEFT_BRACKET   &kp BSLH        &trans
-&trans  &kp EXCL      &kp UNDERSCORE  &kp PLUS   &kp DOUBLE_QUOTES  &none                           &none          &kp RIGHT_PARENTHESIS  &kp RIGHT_BRACE  &kp RIGHT_BRACKET  &kp PIPE        &trans
-                                      &trans     &trans             &trans                          &trans         &trans                 &trans
+&trans  &kp CAPSLOCK  &kp AT         &kp HASH       &kp DLLR           &none             &none  &none  &none          &kp PERCENT            &kp ASTERISK     &kp AMPERSAND      &kp KP_NUMLOCK  &trans
+&trans  &kp CARET     &kp MINUS      &kp LS(EQUAL)  &kp APOS           &kp GREATER_THAN  &none  &none  &kp LESS_THAN  &kp LEFT_PARENTHESIS   &kp LEFT_BRACE   &kp LEFT_BRACKET   &kp BSLH        &trans
+&trans  &kp EXCL      &kp LS(MINUS)  &kp EQUAL      &kp DOUBLE_QUOTES  &none                           &none          &kp RIGHT_PARENTHESIS  &kp RIGHT_BRACE  &kp RIGHT_BRACKET  &kp PIPE        &trans
+                                     &trans         &trans             &trans                          &trans         &trans                 &trans
             >;
         };
 
