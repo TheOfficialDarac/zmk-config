@@ -48,10 +48,10 @@
             //                    | GUI |     | SPC   |        | ENT   |     | ALT |
 
             bindings = <
-&trans  &none   &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &none           &none  &none  &none   &kp HOME  &kp INS        &kp DEL       &kp END    &trans
-&trans  &kp N0  &kp NUMBER_4  &kp N5        &kp NUMBER_6  &kp DOLLAR      &none  &none  &none   &kp LEFT  &kp DOWN       &kp UP_ARROW  &kp RIGHT  &trans
-&trans  &none   &kp N7        &kp N8        &kp N9        &studio_unlock                &none   &kp HOME  &kp PAGE_DOWN  &kp PAGE_UP   &kp END    &trans
-                              &trans        &trans        &trans                        &trans  &trans    &trans
+&trans  &none   &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &none           &none  &none  &kp PAGE_UP    &kp HOME   &kp INS   &kp DEL       &kp END    &trans
+&trans  &kp N0  &kp NUMBER_4  &kp N5        &kp NUMBER_6  &kp DOLLAR      &none  &none  &kp PAGE_DOWN  &kp LEFT   &kp DOWN  &kp UP_ARROW  &kp RIGHT  &trans
+&trans  &none   &kp N7        &kp N8        &kp N9        &studio_unlock                &none          &kp MINUS  &trans    &trans        &trans     &trans
+                              &trans        &trans        &trans                        &trans         &trans     &trans
             >;
         };
 
@@ -65,20 +65,20 @@
             //                    | GUI |     | SPC |               | ENT |     | ALT |
 
             bindings = <
-&trans  &kp CAPSLOCK  &kp AT         &kp HASH       &kp DLLR           &none             &none  &none  &none          &kp PERCENT            &kp ASTERISK     &kp AMPERSAND      &kp KP_NUMLOCK  &trans
-&trans  &kp CARET     &kp MINUS      &kp LS(EQUAL)  &kp APOS           &kp GREATER_THAN  &none  &none  &kp LESS_THAN  &kp LEFT_PARENTHESIS   &kp LEFT_BRACE   &kp LEFT_BRACKET   &kp BSLH        &trans
-&trans  &kp EXCL      &kp LS(MINUS)  &kp EQUAL      &kp DOUBLE_QUOTES  &none                           &none          &kp RIGHT_PARENTHESIS  &kp RIGHT_BRACE  &kp RIGHT_BRACKET  &kp PIPE        &trans
-                                     &trans         &trans             &trans                          &trans         &trans                 &trans
+&trans  &kp CAPSLOCK  &kp AT         &kp HASH       &kp DLLR          &none              &none  &none  &none              &kp PERCENT            &kp ASTERISK     &kp AMPERSAND      &kp KP_NUMLOCK  &trans
+&trans  &kp CARET     &kp MINUS      &kp EQUAL      &kp GREATER_THAN  &kp SINGLE_QUOTE   &none  &none  &kp SINGLE_QUOTE   &kp LEFT_PARENTHESIS   &kp LEFT_BRACE   &kp LEFT_BRACKET   &kp BSLH        &trans
+&trans  &kp EXCL      &kp LS(MINUS)  &kp LS(EQUAL)  &kp LESS_THAN     &kp DOUBLE_QUOTES                &kp DOUBLE_QUOTES  &kp RIGHT_PARENTHESIS  &kp RIGHT_BRACE  &kp RIGHT_BRACKET  &kp PIPE        &trans
+                                     &trans         &trans            &trans                           &trans             &trans                 &trans
             >;
         };
 
         SPECIAL {
             display-name = "EXTRA 1";
             bindings = <
-&kp F1  &kp F2    &kp F3           &kp F4             &kp F5           &kp F6           &trans  &trans  &kp F7          &kp F8          &kp F9          &kp F10       &kp F11          &kp F12
-&trans  &mkp MB5  &mkp MB4         &mkp MCLK          &mkp MB1         &mkp MB2         &trans  &trans  &studio_unlock  &mmv MOVE_LEFT  &mmv MOVE_DOWN  &mmv MOVE_UP  &mmv MOVE_RIGHT  &trans
-&trans  &tog 4    &rgb_ug RGB_EFF  &kp C_VOLUME_DOWN  &kp C_VOLUME_UP  &rgb_ug RGB_TOG                  &bt BT_CLR_ALL  &msc SCRL_LEFT  &msc SCRL_DOWN  &msc SCRL_UP  &msc SCRL_RIGHT  &trans
-                                   &trans             &trans           &trans                           &trans          &trans          &trans
+&kp F1  &kp F2                &kp F3                &kp F4       &kp F5           &kp F6             &trans  &trans  &kp F7          &kp F8          &kp F9          &kp F10       &kp F11          &kp F12
+&trans  &mkp MB5              &mkp MB4              &mkp MCLK    &mkp MB1         &mkp MB2           &trans  &trans  &studio_unlock  &mmv MOVE_LEFT  &mmv MOVE_DOWN  &mmv MOVE_UP  &mmv MOVE_RIGHT  &trans
+&tog 4  &kp C_BRIGHTNESS_DEC  &kp C_BRIGHTNESS_INC  &kp C_PAUSE  &kp C_VOLUME_UP  &kp C_VOLUME_DOWN                  &none           &msc SCRL_LEFT  &msc SCRL_DOWN  &msc SCRL_UP  &msc SCRL_RIGHT  &trans
+                                                    &trans       &trans           &trans                             &trans          &trans          &trans
             >;
         };
 
