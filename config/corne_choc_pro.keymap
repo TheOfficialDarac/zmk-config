@@ -22,12 +22,6 @@
         default_layer {
             display-name = "C-DH";
 
-            // --------------------------------------------------------------------------------
-            // |  TAB |  Q  |  W  |  E  |  R  |  T  |  MUTE |  PP   |  Y  |  U   |  I  |  O  |  P  | BSPC |
-            // | CTRL |  A  |  S  |  D  |  F  |  G  |  LALT |  RALT |  H  |  J   |  K  |  L  |  ;  |  '   |
-            // | SHFT |  Z  |  X  |  C  |  V  |  B  |               |  N  |  M   |  ,  |  .  |  /  | ESC  |
-            //                    | GUI | LWR | SPC |               | ENT | RSE  | ALT |
-
             bindings = <
 &kp TAB       &kp Q  &kp W  &kp E             &kp P      &kp B  &none  &none  &kp J  &kp L           &kp U      &kp Y    &kp GRAVE  &kp BSPC
 &kp ESCAPE    &kp A  &kp R  &kp S             &kp T      &kp G  &none  &none  &kp M  &kp N           &kp E      &kp I    &kp O      &kp ENTER
@@ -41,12 +35,6 @@
         lower_layer {
             display-name = "NUMBER";
 
-            // -----------------------------------------------------------------------------------------
-            // |  TAB |  1  |  2  |  3  |  4  |  5    |  LCTRL | RCTRL |  6  |  7  |  8  |  9  |  0  | BSPC |
-            // | CTRL | BT1 | BT2 | BT3 | BT4 | BT5   |  LALT  | RALT  | LFT | DWN |  UP | RGT |     |      |
-            // | SHFT | BTCR| RGB | RST | BOOT| Unlock|        |       |     |     |     |     |     |      |
-            //                    | GUI |     | SPC   |        | ENT   |     | ALT |
-
             bindings = <
 &trans  &none   &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &none           &none  &none  &kp PAGE_UP    &kp HOME   &kp INS   &kp DEL       &kp END    &trans
 &trans  &kp N0  &kp NUMBER_4  &kp N5        &kp NUMBER_6  &kp DOLLAR      &none  &none  &kp PAGE_DOWN  &kp LEFT   &kp DOWN  &kp UP_ARROW  &kp RIGHT  &trans
@@ -57,12 +45,6 @@
 
         raise_layer {
             display-name = "SYMBOL";
-
-            // -----------------------------------------------------------------------------------------
-            // |  TAB |  !  |  @  |  #  |  $  |  %  | LCTRL | RCTRL |  ^  |  &  |  *  |  (  |  )  | BSPC |
-            // | CTRL | HUD | HUI |     |     |     |  LALT | RALT  |  -  |  =  |  [  |  ]  |  \  |  `   |
-            // | SHFT |     |     |     |     |     |               |  _  |  +  |  {  |  }  | "|" |  ~   |
-            //                    | GUI |     | SPC |               | ENT |     | ALT |
 
             bindings = <
 &trans  &kp CAPSLOCK  &kp AT         &kp HASH       &kp DLLR          &none              &none  &none  &none              &kp PERCENT            &kp ASTERISK     &kp AMPERSAND      &kp KP_NUMLOCK  &trans
