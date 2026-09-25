@@ -56,7 +56,7 @@
             bindings = <
 &kp F1  &kp F2                &kp F3                &kp F4       &kp F5           &kp F6             &trans  &trans  &kp F7          &kp F8          &kp F9          &kp F10       &kp F11          &kp F12
 &trans  &mkp MB5              &mkp MB4              &mkp MCLK    &mkp MB1         &mkp MB2           &trans  &trans  &studio_unlock  &mmv MOVE_LEFT  &mmv MOVE_DOWN  &mmv MOVE_UP  &mmv MOVE_RIGHT  &trans
-&tog 4  &kp C_BRIGHTNESS_DEC  &kp C_BRIGHTNESS_INC  &kp C_PAUSE  &kp C_VOLUME_UP  &kp C_VOLUME_DOWN                  &none           &msc SCRL_LEFT  &msc SCRL_DOWN  &msc SCRL_UP  &msc SCRL_RIGHT  &trans
+&tog 4  &kp C_BRIGHTNESS_DEC  &kp C_BRIGHTNESS_INC  &kp C_PAUSE  &kp C_VOLUME_UP  &kp C_VOLUME_DOWN                  &none           &msc SCRL_LEFT  &msc SCRL_DOWN  &msc SCRL_UP  &msc SCRL_RIGHT  &tog 5
                                                     &trans       &trans           &trans                             &trans          &trans          &trans
             >;
         };
@@ -74,10 +74,10 @@
         extra_layer_3 {
             display-name = "EXTRA 3";
             bindings = <
-&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans                  &trans  &trans  &trans  &trans  &trans  &trans
-                        &trans  &trans  &trans                  &trans  &trans  &trans
+&trans  &kp Q  &kp W  &kp E   &kp R   &kp T   &kp  &kp  &kp     &kp     &kp     &kp  &kp  &trans
+&trans  &kp A  &kp A  &kp D   &kp F   &kp G   &kp  &kp  &kp     &kp     &kp     &kp  &kp  &trans
+&trans  &kp    &kp    &kp     &kp     &kp               &kp     &kp     &kp     &kp  &kp  &tog 5
+                      &trans  &trans  &trans            &trans  &trans  &trans
             >;
         };
 
