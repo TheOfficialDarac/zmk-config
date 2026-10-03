@@ -1,5 +1,6 @@
 #define ZMK_POINTING_DEFAULT_MOVE_VAL 1000  // default: 600
 #define ZMK_POINTING_DEFAULT_SCRL_VAL 20    // default: 10
+
 #include <behaviors.dtsi>
 #include <dt-bindings/zmk/bt.h>
 #include <dt-bindings/zmk/keys.h>
@@ -54,7 +55,7 @@
         };
 
         SPECIAL {
-            display-name = "EXTRA 1";
+            display-name = "SPECIAL";
             bindings = <
 &kp F1  &kp F2                &kp F3                &kp F4       &kp F5           &kp F6             &trans  &trans  &kp F7          &kp F8          &kp F9          &kp F10       &kp F11          &kp F12
 &trans  &mkp MB5              &mkp MB4              &mkp MCLK    &mkp MB1         &mkp MB2           &trans  &trans  &studio_unlock  &mmv MOVE_LEFT  &mmv MOVE_DOWN  &mmv MOVE_UP  &mmv MOVE_RIGHT  &trans
@@ -64,7 +65,7 @@
         };
 
         BT-RGB {
-            display-name = "EXTRA 2";
+            display-name = "BT-RGB";
             bindings = <
 &trans  &bt BT_SEL 0   &bt BT_SEL 1   &bt BT_SEL 2    &bt BT_SEL 3   &bt BT_SEL 4   &trans  &trans  &rgb_ug RGB_COLOR_HSB(0,67,47)  &rgb_ug RGB_COLOR_HSB(221,82,50)  &rgb_ug RGB_COLOR_HSB(115,81,46)  &rgb_ug RGB_COLOR_HSB(54,86,54)  &rgb_ug RGB_COLOR_HSB(287,100,55)  &rgb_ug RGB_COLOR_HSB(178,100,50)
 &trans  &bt BT_NXT     &bt BT_PRV     &bt BT_CLR_ALL  &bt BT_CLR     &trans         &trans  &trans  &rgb_ug RGB_TOG                 &rgb_ug RGB_HUD                   &rgb_ug RGB_SAD                   &rgb_ug RGB_BRD                  &rgb_ug RGB_SPD                    &rgb_ug RGB_EFR
@@ -73,13 +74,13 @@
             >;
         };
 
-        extra_layer_3 {
-            display-name = "EXTRA 3";
+        GAMING {
+            display-name = "GAMING";
             bindings = <
-&trans  &kp NUMBER_1  &kp Q  &kp W   &kp E   &kp R   &none  &none  &kp T   &kp Y   &kp U   &kp I  &kp O         &trans
-&trans  &kp NUMBER_2  &kp A  &kp S   &kp D   &kp F   &none  &none  &kp G   &kp H   &kp J   &kp K  &kp L         &trans
-&trans  &kp NUMBER_3  &kp Z  &kp X   &kp C   &kp V                 &kp B   &kp N   &kp M   &kp P  &kp NUMBER_4  &tog 5
-                             &trans  &trans  &trans                &trans  &trans  &trans
+&trans  &kp NUMBER_1      &kp Q  &kp W   &kp E   &kp R           &none  &none  &kp T   &kp Y   &kp U   &kp I  &kp O         &trans
+&trans  &kp LEFT_SHIFT    &kp A  &kp S   &kp D   &kp F           &none  &none  &kp G   &kp H   &kp J   &kp K  &kp L         &trans
+&trans  &kp LEFT_CONTROL  &kp Z  &kp X   &kp C   &kp V                         &kp B   &kp N   &kp M   &kp P  &kp NUMBER_4  &tog 5
+                                 &trans  &trans  &kp LEFT_SHIFT                &trans  &trans  &trans
             >;
         };
 
